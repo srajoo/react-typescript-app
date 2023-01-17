@@ -16,10 +16,10 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={themeColor}>
         <GlobalStyles />
-        <Routes>
-            <Route path='/react-typescript-app' element={ <Difficulty /> } />
-            <Route path='/react-typescript-app/game' element={ <SelectedGame />} />
-        </Routes>
+          <Routes>
+              <Route path='/' element={ <Difficulty /> } />
+              <Route path='/game' element={ <SelectedGame />} />
+          </Routes>
     </ThemeProvider>
   );
 }

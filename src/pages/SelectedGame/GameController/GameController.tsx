@@ -42,7 +42,7 @@ const GameController: React.FC = () => {
 
   const onReturnToMenu = (): void => {
     const playerWantsToLeave = window.confirm(
-      'Do you want to leave this awesome game?',
+      'Are you sure you want to stop playing?',
     )
 
     if (playerWantsToLeave) navigate(-1);
@@ -59,15 +59,13 @@ const GameController: React.FC = () => {
           <FontAwesomeIcon icon={ faChevronLeft } />
         </BackButton>
 
-        <DifficultyIndicator>
-          {`Playing with ${difficulty} cards`}
-        </DifficultyIndicator>
+        
       </LeftSideContainer>
 
       <RightSideContainer>
         <Timer>
           <FontAwesomeIcon icon={faClock} />
-          <TimerText>{`${hoursText}:${minutesText}:${secondsText}`}</TimerText>
+          <TimerText>{` ${minutesText}:${secondsText}`}</TimerText>
         </Timer>
 
         <PlayPauseButton onClick={onPlayPause}>

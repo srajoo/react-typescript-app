@@ -9,6 +9,7 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 0 16px 64px 16px;
+  width: 50%;
 `
 
 type CardItemType = {
@@ -18,7 +19,7 @@ type CardItemType = {
 export const CardItem = styled(Tiles)<CardItemType>`
   min-height: 100px;
   min-width: 100px;
-  height: 20vh;
+  height: 16vh;
   font-size: 8rem;
   flex: 1 0
     calc(

@@ -30,10 +30,10 @@ const Tiles: React.FC<CardProps> = (props) => {
       onClick={onClick}
       disabled={disabled}
     >
-      {isShowingFrontFace ? (
+       {isShowingFrontFace ? (
         children
       ) : (
-        <FontAwesomeIcon icon={faCircleQuestion} />
+        <div></div>
       )}
     </Container>
   )

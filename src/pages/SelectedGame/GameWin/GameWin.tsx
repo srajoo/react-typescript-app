@@ -27,9 +27,9 @@ const GameWin: React.FC = () => {
       isShowing={isShowingWinModal}
       onCloseModal={onPlayAgain}
       title="Congratulations!"
-      message="You proved that your memory is powerful"
+      message="You've successfully completed the game!"
     >
-      <SecondaryAction onClick={onGoBack}>Go Back</SecondaryAction>
+      <PrimaryAction onClick={onGoBack}>Go Back</PrimaryAction>
       <PrimaryAction onClick={onPlayAgain}>Play Again</PrimaryAction>
     </AlertModal>
   )

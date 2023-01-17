@@ -2,21 +2,21 @@ import { ThemeTypes } from '../types/Theme'
 
 export default {
   [ThemeTypes.dark]: {
-    accent: '#00bbcc',
+    accent: '#954f3d',
     primaryText: '#ffffff',
     secondaryText: '#ccc',
-    background: '#333333',
-    controlBar: '#222222',
+    background: '#44302c',
+    controlBar: '#d07058',
     cardBackFace: '#111111',
     cardFrontFace: '#e6e6e6',
   },
   [ThemeTypes.light]: {
-    accent: '#00bbcc',
-    primaryText: '#313131',
-    secondaryText: '#616161',
+    accent: '#cb603e',
+    primaryText: '#442924',
+    secondaryText: '#5a4542',
     background: '#ffffff',
-    controlBar: '#f1f1f1',
-    cardBackFace: '#444444',
-    cardFrontFace: '#e2e2e2',
+    controlBar: '#d07058',
+    cardBackFace: '#deb6af',
+    cardFrontFace: '#cb603e',
   },
 }

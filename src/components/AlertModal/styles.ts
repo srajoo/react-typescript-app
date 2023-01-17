@@ -6,7 +6,7 @@ export const Container = styled.div<{ isShowing?: boolean }>`
   height: 100vh;
   width: 100vw;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: ${({ theme }): string => theme.background};
   display: ${({ isShowing }): string => (isShowing ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
@@ -20,13 +20,15 @@ export const Dialog = styled.div`
   border-radius: 5px;
   width: 33%;
   min-width: 300px;
+  border: 2px solid ${({ theme }): string => theme.primaryText};
 `
 
 export const TitleContainer = styled.div`
   padding: 12px 12px 12px 24px;
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: ${({ theme }): string => theme.primaryText};
+  color: ${({ theme }): string => theme.background};
 `
 
 export const Title = styled.div`

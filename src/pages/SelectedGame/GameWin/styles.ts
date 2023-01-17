@@ -19,9 +19,11 @@ const Button = css`
 export const PrimaryAction = styled.div`
   ${Button}
   background: ${({ theme }): string => theme.accent};
+  color:white;
 `
 
 export const SecondaryAction = styled.div`
   ${Button}
-  background: rgba(0,0,0,0.3);
+  background: ${({ theme }): string => theme.accent};
+  color:white;
 `

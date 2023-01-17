@@ -83,12 +83,12 @@ const DifficultyChooser: React.FC = () => {
                   onClick={onSelectDifficulty(DIFFICULTIES.HARD)}
                   isSelected={selectedDifficulty === DIFFICULTIES.HARD}
                 />
-                <Difficulty
-                  name="Very hard"
+                {/*<Difficulty
+                  name="Expert"
                   numOfCards={DIFFICULTIES.VERY_HARD}
                   onClick={onSelectDifficulty(DIFFICULTIES.VERY_HARD)}
                   isSelected={selectedDifficulty === DIFFICULTIES.VERY_HARD}
-                />
+      />*/}
               </DifficultyContainer>
     
               <PlayButtonContainer>
