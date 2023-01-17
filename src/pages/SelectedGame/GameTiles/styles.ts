@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 0 16px 64px 16px;
-  width: 50%;
+  width: 100%;
 `
 
 type CardItemType = {
