@@ -17,8 +17,8 @@ const App: React.FC = () => {
     <ThemeProvider theme={themeColor}>
         <GlobalStyles />
         <Routes>
-            <Route path='/' element={ <Difficulty /> } />
-            <Route path='/game' element={ <SelectedGame />} />
+            <Route path='/react-typescript-app' element={ <Difficulty /> } />
+            <Route path='/react-typescript-app/game' element={ <SelectedGame />} />
         </Routes>
     </ThemeProvider>
   );
